@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>MecaPy </title>
+<meta name="description" content="Location et vente de mini-pelles au Paraguay." />
+
+<!-- Polices -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+
+<!-- Header / nav sticky -->
+<header id="site-header">
+  <div class="site-container">
+    <div class="header-inner">
+
+      <a href="#accueil" class="brand-logo">
+        <span class="brand-text">MECA<span>PARAGUAY</span></span>
+        
+      </a>
+
+      <nav class="desktop-nav">
+        <a href="#accueil" data-i18n="nav.home">Inicio</a>
+        <a href="#catalogue" data-i18n="nav.catalogue">Catálogo</a>
+        <a href="#contact" data-i18n="nav.contact">Contacto</a>
+      </nav>
+
+      <div class="header-actions">
+
+        <!-- Sélecteur de langue desktop -->
+        <div class="lang-switcher">
+          <button data-lang-btn="es" aria-pressed="true">ES</button>
+          <span></span>
+          <button data-lang-btn="fr" aria-pressed="false">FR</button>
+          <span></span>
+          <button data-lang-btn="en" aria-pressed="false">EN</button>
+        </div>
+
+        <!-- Sélecteur de langue mobile -->
+        <select class="lang-select" aria-label="Idioma / Langue / Language">
+          <option value="fr">FR</option>
+          <option value="es" selected>ES</option>
+          <option value="en">EN</option>
+        </select>
+
+        <a href="#" data-whatsapp-general target="_blank" rel="noopener" class="btn-accent whatsapp-btn-desktop">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.29-.15-1.72-.85-1.99-.95-.27-.1-.46-.15-.66.15-.2.29-.76.95-.93 1.14-.17.2-.34.22-.63.07-.29-.15-1.23-.45-2.34-1.44-.87-.77-1.45-1.72-1.62-2.01-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.51.15-.17.2-.29.29-.49.1-.2.05-.37-.02-.51-.07-.15-.66-1.59-.9-2.18-.24-.57-.48-.5-.66-.5h-.56c-.2 0-.51.07-.78.37-.27.29-1.02 1-1.02 2.44s1.05 2.83 1.19 3.03c.15.2 2.06 3.15 5 4.42.7.3 1.24.48 1.67.61.7.22 1.34.19 1.84.12.56-.08 1.72-.7 1.96-1.38.24-.68.24-1.26.17-1.38-.07-.12-.26-.2-.55-.34z"/><path d="M12 2C6.48 2 2 6.48 2 12c0 1.94.55 3.75 1.5 5.29L2 22l4.86-1.47A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18a8.02 8.02 0 01-4.29-1.24l-.31-.19-3.06.93.94-2.98-.2-.31A7.97 7.97 0 014 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8z"/></svg>
+          WhatsApp
+        </a>
+
+        <button id="mobile-menu-btn" aria-expanded="false" aria-controls="mobile-menu" data-i18n-aria="nav.menuOpen" aria-label="Abrir menú">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Menu mobile -->
+  <div id="mobile-menu" class="mobile-menu">
+    <nav class="mobile-nav">
+      <a href="#accueil" data-i18n="nav.home">Inicio</a>
+      <a href="#catalogue" data-i18n="nav.catalogue">Miniexcavadoras</a>
+      <a href="#catalogue" data-i18n="nav.rental">Alquiler</a>
+      <a href="#catalogue" data-i18n="nav.sale">Venta</a>
+      <a href="#avantages" data-i18n="nav.advantages">Por qué elegirnos</a>
+      <a href="#contact" data-i18n="nav.contact">Contacto</a>
+      <a href="#" data-whatsapp-general target="_blank" rel="noopener" class="btn-accent mobile-whatsapp-btn">
+        WhatsApp
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- Hero -->
+<section id="accueil" class="hero-section">
+  <div class="blueprint-grid"></div>
+  <div class="hero-glow"></div>
+  
+  <div class="hero-scene absolute inset-x-0 bottom-0 h-1/2 md:h-2/3 opacity-[0.12] pointer-events-none z-0" aria-hidden="true" style="position: absolute; left: 0; right: 0; bottom: 0;">
+    <svg viewBox="0 0 1200 500" preserveAspectRatio="xMidYMax slice" style="width: 100%; height: 100%;" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 460 L120 460 L170 400 L230 460 L340 460 L400 380 L470 460 L1200 460 L1200 500 L0 500 Z" fill="currentColor"/>
+      <line x1="900" y1="120" x2="900" y2="440" stroke="currentColor" stroke-width="6"/>
+      <line x1="900" y1="150" x2="1080" y2="150" stroke="currentColor" stroke-width="6"/>
+      <line x1="900" y1="150" x2="840" y2="190" stroke="currentColor" stroke-width="6"/>
+      <line x1="1060" y1="150" x2="1060" y2="200" stroke="currentColor" stroke-width="5"/>
+      <rect x="875" y="440" width="50" height="20" fill="currentColor"/>
+      <rect x="120" y="330" width="70" height="70" fill="currentColor" opacity="0.5"/>
+      <rect x="200" y="360" width="55" height="40" fill="currentColor" opacity="0.5"/>
+      <circle cx="600" cy="90" r="42" fill="currentColor" opacity="0.4"/>
+    </svg>
+  </div>
+
+  <div class="site-container" style="position: relative; z-index: 2;">
+    <div class="hero-content">
+      <p data-i18n="hero.eyebrow" class="hero-eyebrow">
+        Alquiler y venta de miniexcavadoras — Paraguay
+      </p>
+      <h1 class="hero-title">
+        <span data-i18n="hero.title">La potencia que necesitás, cuando la necesitás</span>
+      </h1>
+      <p data-i18n="hero.subtitle" class="hero-subtitle">
+        Miniexcavadoras robustas, inspeccionadas y listas para un uso seguro
+      </p>
+
+      <div class="hero-cta-group">
+        <a href="#" data-whatsapp-general target="_blank" rel="noopener"
+           data-i18n="hero.cta"
+           class="btn-accent hero-btn-primary">
+          Pedir cotización por WhatsApp
+        </a>
+        <a href="#catalogue" data-i18n="hero.ctaSecondary"
+           class="btn-outline hero-btn-secondary">
+          Ver catálogo
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stats (plaque signalétique) -->
+  <div class="site-container stats-container">
+    <div id="hero-stats" class="plate plate--dark stats-grid">
+      <span class="plate__bolt plate__bolt--tl"></span>
+      <span class="plate__bolt plate__bolt--tr"></span>
+      <span class="plate__bolt plate__bolt--bl"></span>
+      <span class="plate__bolt plate__bolt--br"></span>
+
+      <div style="text-align: center;">
+        <p style="font-family: var(--f-display); font-size: 1.8rem; font-weight: 700; color: var(--c-offwhite);">5</p>
+        <p style="font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.05em; text-transform: uppercase; color: rgba(244,242,237,0.6); margin-top: 4px;">Modelos disponibles</p>
+      </div>
+      <div style="text-align: center;">
+        <p style="font-family: var(--f-display); font-size: 1.8rem; font-weight: 700; color: var(--c-offwhite);">100%</p>
+        <p style="font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.05em; text-transform: uppercase; color: rgba(244,242,237,0.6); margin-top: 4px;">Neuvas Máquinas</p>
+      </div>
+      <div style="text-align: center;">
+        <p style="font-family: var(--f-display); font-size: 1.8rem; font-weight: 700; color: var(--c-offwhite);">7j/7</p>
+        <p style="font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.05em; text-transform: uppercase; color: rgba(244,242,237,0.6); margin-top: 4px;">Apoyo técnico</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Catalogue -->
+<section id="catalogue" class="catalogue-section">
+  <div class="site-container">
+
+    <div class="section-header">
+      <p data-i18n="catalogue.eyebrow" class="section-eyebrow">Catálogo</p>
+      <h2 class="section-title">
+        <span data-i18n="catalogue.title">Nuestras miniexcavadoras</span>
+      </h2>
+      <p data-i18n="catalogue.subtitle" class="section-subtitle">
+        Diversos tamaños diseñados para satisfacer todas sus necesidades de construcción.
+      </p>
+    </div>
+
+    <!-- Filtres et Bouton -->
+<div class="filter-group" role="group" aria-label="Filtrer le catalogue">
+  <button data-filter="rental" aria-pressed="false" class="filter-btn">
+    <span>Alquiler</span>
+  </button>
+  <button data-filter="sale" aria-pressed="false" class="filter-btn">
+    <span>Venta</span>
+  </button>
+  
+  <!-- Bouton PDF avec une classe spécifique -->
+  <a href="../data/catalogo_miniexcavadoras.pdf" target="_blank" download class="btn btn-accent catalogue-pdf-btn">
+    Descargar catálogo PDF
+  </a>
+</div>
+
+    </div>
+
+    <!-- Grille catalogue -->
+    <div id="catalogue-grid" class="cards-grid">
+      <!-- rempli en JS -->
+    </div>
+    <div class="catalogue-financing">
+      <h3 class="catalogue-financing__title font-display">Solicite su financiación</h3>
+      <p class="catalogue-financing__subtitle">Facilitamos el acceso a su maquinaria con planes a su medida</p>
+      
+      <a href="../data/formulario_de_solicitud_de_credito.docx" download class="btn btn-accent catalogue-financing__btn">
+    orden de compra (.docx)
+  </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- Avantages -->
+<section id="avantages" class="advantages-section">
+  <div class="blueprint-grid advantages-bg"></div>
+  <div class="site-container relative">
+    <div class="section-header">
+      <p data-i18n="advantages.eyebrow" class="section-eyebrow text-accent">Por qué elegirnos</p>
+      <h2 class="section-title text-offwhite">
+        <span data-i18n="advantages.title">Antes de ser alquiladas, todas nuestras máquinas se someten a inspección y pruebas</span>
+      </h2>
+    </div>
+
+    <div id="advantages-grid" class="cards-grid">
+      <!-- rempli en JS -->
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="contact-section">
+  <div class="site-container">
+    <div class="contact-grid">
+
+      <!-- Colonne de gauche : Hablamos de tu obra -->
+      <div>
+        <p data-i18n="contact.eyebrow" class="section-eyebrow">Contacto</p>
+        <h2 class="section-title">
+          <span data-i18n="contact.title">Hablemos de tu obra</span>
+        </h2>
+        <p data-i18n="contact.subtitle" class="section-subtitle">
+          Nuestro equipo te responde rápido por WhatsApp.
+        </p>
+
+        <a href="#" data-whatsapp-general target="_blank" rel="noopener" data-i18n="contact.ctaWhatsapp" class="btn btn-accent contact-cta">
+          Escribir por WhatsApp
+        </a>
+
+        <div class="social-wrapper">
+          <p data-i18n="contact.socialTitle" class="social-title">Seguinos</p>
+          <div class="social-links">
+            <a data-social="instagram" href="#" target="_blank" rel="noopener" aria-label="Instagram" class="social-icon">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+            </a>
+            <a data-social="facebook" href="#" target="_blank" rel="noopener" aria-label="Facebook" class="social-icon">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M15 8h-2a2 2 0 00-2 2v3H9v3h2v6h3v-6h2.2l.8-3H14v-2a1 1 0 011-1h2V8z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Colonne de droite : Passer à l'action / Fichier Word -->
+      <div>
+        <div class="plate contact-plate">
+          <span class="plate__bolt plate__bolt--tl"></span>
+          <span class="plate__bolt plate__bolt--tr"></span>
+          <span class="plate__bolt plate__bolt--bl"></span>
+          <span class="plate__bolt plate__bolt--br"></span>
+
+          <div class="contact-info-item">
+            <p class="contact-label">ACTÚE AHORA</p>
+            <p class="contact-value contact-main-title">Solicite su excavadora ahora</p>
+          </div>
+
+          <div class="contact-info-item contact-file-container">
+            <p class="contact-label">formulario de solicitud de credito</p>
+            <p class="contact-value contact-desc">
+              Descargue el documento oficial en formato Word, complételo y envíenoslo.
+            </p>
+            
+<!-- Bouton de téléchargement du fichier Word -->
+            
+  <a href="../data/formulario_de_solicitud_de_credito.docx" download class="btn btn-accent contact-cta-file">
+      orden de compra (.docx)
+  </a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="site-container">
+    <div class="footer-top">
+      <div>
+        <span class="footer-logo">MECA<span>Paraguay</span></span>
+        <p data-i18n="footer.tagline" class="footer-tagline">Alquiler y venta de miniexcavadoras en Paraguay.</p>
+      </div>
+      <nav class="footer-nav">
+        <a href="#accueil" data-i18n="nav.home">Inicio</a>
+        <a href="#catalogue" data-i18n="nav.catalogue">Miniexcavadoras</a>
+        <a href="#avantages" data-i18n="nav.advantages">Por qué elegirnos</a>
+        <a href="#contact" data-i18n="nav.contact">Contacto</a>
+      </nav>
+      <div class="footer-social">
+        <a data-social="instagram" href="#" target="_blank" rel="noopener" aria-label="Instagram" class="footer-social-icon">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+        </a>
+        <a data-social="facebook" href="#" target="_blank" rel="noopener" aria-label="Facebook" class="footer-social-icon">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M15 8h-2a2 2 0 00-2 2v3H9v3h2v6h3v-6h2.2l.8-3H14v-2a1 1 0 011-1h2V8z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="current-year">2026</span> MecaPy . <span data-i18n="footer.rights">Todos los derechos reservados.</span></p>
+      <p data-i18n="footer.legal">Fotos e ilustraciones a modo ilustrativo.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Bouton WhatsApp flottant -->
+<a href="#" data-whatsapp-general target="_blank" rel="noopener" data-i18n-aria="floatingWhatsapp" class="fab-whatsapp" aria-label="Chatear por WhatsApp">
+  <svg viewBox="0 0 24 24" width="26" height="26" fill="#ffffff" aria-hidden="true"><path d="M17.47 14.38c-.29-.15-1.72-.85-1.99-.95-.27-.1-.46-.15-.66.15-.2.29-.76.95-.93 1.14-.17.2-.34.22-.63.07-.29-.15-1.23-.45-2.34-1.44-.87-.77-1.45-1.72-1.62-2.01-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.51.15-.17.2-.29.29-.49.1-.2.05-.37-.02-.51-.07-.15-.66-1.59-.9-2.18-.24-.57-.48-.5-.66-.5h-.56c-.2 0-.51.07-.78.37-.27.29-1.02 1-1.02 2.44s1.05 2.83 1.19 3.03c.15.2 2.06 3.15 5 4.42.7.3 1.24.48 1.67.61.7.22 1.34.19 1.84.12.56-.08 1.72-.7 1.96-1.38.24-.68.24-1.26.17-1.38-.07-.12-.26-.2-.55-.34z"/><path d="M12 2C6.48 2 2 6.48 2 12c0 1.94.55 3.75 1.5 5.29L2 22l4.86-1.47A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18a8.02 8.02 0 01-4.29-1.24l-.31-.19-3.06.93.94-2.98-.2-.31A7.97 7.97 0 014 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8z"/></svg>
+</a>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
