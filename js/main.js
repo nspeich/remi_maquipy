@@ -116,3 +116,21 @@ document.addEventListener("DOMContentLoaded", () => {
     yearSpan.textContent = new Date().getFullYear();
   }
 });
+
+// relier whatsapp
+
+document.addEventListener("DOMContentLoaded", () => {
+  const phoneNumber = "33665527052"; 
+  const defaultMessage = "¡Hola! Me interesa obtener más información sobre el alquiler y venta de miniexcavadoras.";
+
+  // Encoder le message pour l'URL
+  const encodedMessage = encodeURIComponent(defaultMessage);
+  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+  // Liens ayant l'attribut data-whatsapp-general
+  const whatsappButtons = document.querySelectorAll("[data-whatsapp-general]");
+
+  whatsappButtons.forEach(button => {
+    button.href = whatsappUrl;
+  });
+});
