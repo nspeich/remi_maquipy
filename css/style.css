@@ -1,6 +1,4 @@
-/* =========================================================
-   mecapy Paraguay — Design tokens & Layout
-   ========================================================= */
+/* mecapy Paraguay — Design tokens & Layout */
 
 :root {
   /* Couleurs */
@@ -226,9 +224,7 @@ a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible
   background: var(--c-line-dark);
 }
 
-.lang-select {
-  display: none;
-}
+
 
 #mobile-menu-btn {
   display: none;
@@ -759,9 +755,7 @@ section {
   #mobile-menu-btn {
     display: block;
   }
-  .lang-select {
-    display: block;
-  }
+  
   .contact-grid {
     grid-template-columns: 1fr;
   }
