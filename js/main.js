@@ -31,7 +31,7 @@ const TERRAPRO_MACHINES = [
     img: "photo_TW40.webp",
     pdf: "tw40.pdf",
     name: "TerraPro TW40",
-    tagline: "Gran formato, total confort",
+    tagline: "Total confort",
     descr: "Miniexcavadora sobre orugas de 4 toneladas con brazo oscilante, cabina espaciosa climatizada y motor Kubota Euro 5.",
     specs: [
       { label: "Peso operativo", value: "3,8 t" },
@@ -57,7 +57,7 @@ const TERRAPRO_MACHINES = [
     img: "photo_TWS65.webp",
     pdf: "tws65.pdf",
     name: "TerraPro TWS65",
-    tagline: "Polivalente, gran capacidad",
+    tagline: "Gran capacidad",
     descr: "Minicargadora más potente, motor Yanmar y cambio rápido de accesorios tipo Bobcat.",
     specs: [
       { label: "Peso operativo", value: "3,35 t" },
