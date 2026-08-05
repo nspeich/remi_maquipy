@@ -2,7 +2,7 @@
 const TERRAPRO_MACHINES = [
   {
     id: "tw18",
-    img: "tw18.jpg",
+    img: "photo_TW18.webp",
     pdf: "tw18.pdf",
     name: "TerraPro TW18",
     tagline: "Compacte, passe-partout",
@@ -15,7 +15,7 @@ const TERRAPRO_MACHINES = [
   },
   {
     id: "tw20",
-    img: "tw20.jpg",
+    img: "photo_TW20.webp",
     pdf: "tw20.pdf",
     name: "TerraPro TW20",
     tagline: "Chenilles, tout-terrain",
@@ -28,7 +28,7 @@ const TERRAPRO_MACHINES = [
   },
   {
     id: "tw40",
-    img: "tw40.jpg",
+    img: "photo_TW40.webp",
     pdf: "tw40.pdf",
     name: "TerraPro TW40",
     tagline: "Grand format, tout confort",
@@ -41,7 +41,7 @@ const TERRAPRO_MACHINES = [
   },
   {
     id: "tws45",
-    img: "tws45.jpg",
+    img: "photo_TWS45.webp",
     pdf: "tws45.pdf",
     name: "TerraPro TWS45",
     tagline: "Polyvalente, compacte",
@@ -54,7 +54,7 @@ const TERRAPRO_MACHINES = [
   },
   {
     id: "tws65",
-    img: "tws65.jpg",
+    img: "photo_TWS65.webp",
     pdf: "tws65.pdf",
     name: "TerraPro TWS65",
     tagline: "Polyvalente, grande capacité",
