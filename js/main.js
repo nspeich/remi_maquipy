@@ -5,12 +5,12 @@ const TERRAPRO_MACHINES = [
     img: "photo_TW18.webp",
     pdf: "tw18.pdf",
     name: "TerraPro TW18",
-    tagline: "Compacte, passe-partout",
-    descr: "Mini-pelle sur chenilles très compacte, pensée pour les espaces réduits : jardins, vergers, petits travaux de terrassement.",
+    tagline: "Compacta, todo terreno",
+    descr: "Miniexcavadora sobre orugas muy compacta, pensada para espacios reducidos: jardines, huertos, pequeños trabajos de movimiento de tierra.",
     specs: [
-      { label: "Poids opérationnel", value: "1,8 t" },
-      { label: "Puissance moteur", value: "10,4 – 18,8 kW" },
-      { label: "Profondeur de fouille", value: "2,26 m" }
+      { label: "Peso operativo", value: "1,8 t" },
+      { label: "Potencia del motor", value: "10,4 – 18,8 kW" },
+      { label: "Profundidad de excavación", value: "2,26 m" }
     ]
   },
   {
@@ -18,12 +18,12 @@ const TERRAPRO_MACHINES = [
     img: "photo_TW20.webp",
     pdf: "tw20.pdf",
     name: "TerraPro TW20",
-    tagline: "Chenilles, tout-terrain",
-    descr: "Mini-pelle sur chenilles compacte pour espaces étroits, fiable et simple à prendre en main.",
+    tagline: "Orugas, todoterreno",
+    descr: "Miniexcavadora sobre orugas compacta para espacios estrechos, fiable y fácil de manejar.",
     specs: [
-      { label: "Poids opérationnel", value: "2,0 t" },
-      { label: "Puissance moteur", value: "11,8 – 18,1 kW" },
-      { label: "Profondeur de fouille", value: "2,30 m" }
+      { label: "Peso operativo", value: "2,0 t" },
+      { label: "Potencia del motor", value: "11,8 – 18,1 kW" },
+      { label: "Profundidad de excavación", value: "2,30 m" }
     ]
   },
   {
@@ -31,12 +31,12 @@ const TERRAPRO_MACHINES = [
     img: "photo_TW40.webp",
     pdf: "tw40.pdf",
     name: "TerraPro TW40",
-    tagline: "Grand format, tout confort",
-    descr: "Mini-pelle sur chenilles 4 tonnes à bras oscillant, cabine spacieuse climatisée et moteur Kubota Euro 5.",
+    tagline: "Gran formato, total confort",
+    descr: "Miniexcavadora sobre orugas de 4 toneladas con brazo oscilante, cabina espaciosa climatizada y motor Kubota Euro 5.",
     specs: [
-      { label: "Poids opérationnel", value: "3,8 t" },
-      { label: "Puissance moteur", value: "18,2 kW" },
-      { label: "Profondeur de fouille", value: "3,21 m" }
+      { label: "Peso operativo", value: "3,8 t" },
+      { label: "Potencia del motor", value: "18,2 kW" },
+      { label: "Profundidad de excavación", value: "3,21 m" }
     ]
   },
   {
@@ -44,12 +44,12 @@ const TERRAPRO_MACHINES = [
     img: "photo_TWS45.webp",
     pdf: "tws45.pdf",
     name: "TerraPro TWS45",
-    tagline: "Polyvalente, compacte",
-    descr: "Chargeuse compacte polyvalente, cabine ROPS/FOPS et large gamme d'accessoires compatibles.",
+    tagline: "Polivalente, compacta",
+    descr: "Minicargadora polivalente, cabina ROPS/FOPS y amplia gama de accesorios compatibles.",
     specs: [
-      { label: "Poids opérationnel", value: "3,0 t" },
-      { label: "Puissance moteur", value: "50 ch" },
-      { label: "Capacité godet", value: "0,4 – 0,5 m³" }
+      { label: "Peso operativo", value: "3,0 t" },
+      { label: "Potencia del motor", value: "50 hp" },
+      { label: "Capacidad del cucharón", value: "0,4 – 0,5 m³" }
     ]
   },
   {
@@ -57,28 +57,27 @@ const TERRAPRO_MACHINES = [
     img: "photo_TWS65.webp",
     pdf: "tws65.pdf",
     name: "TerraPro TWS65",
-    tagline: "Polyvalente, grande capacité",
-    descr: "Chargeuse compacte plus puissante, moteur Yanmar et changement d'accessoire rapide type Bobcat.",
+    tagline: "Polivalente, gran capacidad",
+    descr: "Minicargadora más potente, motor Yanmar y cambio rápido de accesorios tipo Bobcat.",
     specs: [
-      { label: "Poids opérationnel", value: "3,35 t" },
-      { label: "Puissance moteur", value: "55 kW" },
-      { label: "Capacité godet", value: "0,5 m³" }
+      { label: "Peso operativo", value: "3,35 t" },
+      { label: "Potencia del motor", value: "55 kW" },
+      { label: "Capacidad del cucharón", value: "0,5 m³" }
     ]
   }
 ];
 
 // Fonction pour construire le HTML d'une carte machine
-// (utilise les classes .card / .card-header / .card-image / .card-body /
-//  .specs / .spec / .card-footer réellement définies dans style.css)
 function renderMachineCard(m) {
   return `
     <article class="card">
       <div class="card-header">
-        <span>RÉF. ${m.id.toUpperCase()}</span>
+        <span>REF. ${m.id.toUpperCase()}</span>
         <span>${m.tagline}</span>
       </div>
 
-      <img class="card-image" src="../data/${m.img}" alt="${m.name}" loading="lazy" />
+      <!-- Chemin sans ../ car on est à la racine -->
+      <img class="card-image" src="data/${m.img}" alt="${m.name}" loading="lazy" />
 
       <div class="card-body">
         <h2>${m.name}</h2>
@@ -94,8 +93,8 @@ function renderMachineCard(m) {
       </div>
 
       <div class="card-footer card-footer--single">
-        <a href="../data/${m.pdf}" target="_blank" rel="noopener" class="btn">
-          Fiche technique (PDF)
+        <a href="data/${m.pdf}" target="_blank" rel="noopener" class="btn">
+          Ficha técnica (PDF)
         </a>
       </div>
     </article>`;
@@ -112,10 +111,8 @@ function renderCatalogue() {
 document.addEventListener("DOMContentLoaded", () => {
   renderCatalogue();
   
-  // Mise à jour dynamique de l'année dans le footer si l'élément existe
   const yearSpan = document.getElementById("current-year");
   if (yearSpan) {
     yearSpan.textContent = new Date().getFullYear();
   }
 });
-
